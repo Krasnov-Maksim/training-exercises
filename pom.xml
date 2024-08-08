@@ -25,7 +25,6 @@
         <module>6-0-test-driven-development</module>
         <module>java-fundamentals-util</module>
         <module>lesson-demo</module>
-        <module>y-algorithmic-tasks</module>
     </modules>
 
     <dependencies>
