@@ -16,7 +16,6 @@ import java.util.NoSuchElementException;
  * @author Serhii Hryhus
  */
 public class LinkedList<T> implements List<T> {
-
     private int size = 0;
     private Node<T> first;
     private Node<T> last;
@@ -186,14 +185,14 @@ public class LinkedList<T> implements List<T> {
     private int indexOf(T element) {
         int index = 0;
         if (element == null) {
-            for (Node<T> x = first; x != null; x = x.next) {
-                if (x.item == null)
+            for (Node<T> node = first; node != null; node = node.next) {
+                if (node.item == null)
                     return index;
                 index++;
             }
         } else {
-            for (Node<T> x = first; x != null; x = x.next) {
-                if (element.equals(x.item))
+            for (Node<T> node = first; node != null; node = node.next) {
+                if (element.equals(node.item))
                     return index;
                 index++;
             }
